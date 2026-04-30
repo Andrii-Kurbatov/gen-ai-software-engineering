@@ -1,0 +1,201 @@
+### Banking Transactions API — Sample Requests
+### Compatible with VS Code REST Client extension and JetBrains HTTP Client.
+### Run requests in order: seed transactions first, then read endpoints.
+
+@baseUrl = http://localhost:3000
+
+# ─── Seed: Create Transactions ────────────────────────────────────────────────
+
+### 1. Deposit 1000 USD into ACC-AA111
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "toAccount": "ACC-AA111",
+  "amount": 1000,
+  "currency": "USD",
+  "type": "deposit"
+}
+
+###
+
+### 2. Deposit 1000 UAH into ACC-AA111
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "toAccount": "ACC-AA111",
+  "amount": 1000,
+  "currency": "UAH",
+  "type": "deposit"
+}
+
+###
+
+### 3. Transfer 250 USD from ACC-AA111 to ACC-BB222
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "fromAccount": "ACC-AA111",
+  "toAccount": "ACC-BB222",
+  "amount": 250.00,
+  "currency": "USD",
+  "type": "transfer"
+}
+
+###
+
+### 4. Withdraw 50 USD from ACC-AA111
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "fromAccount": "ACC-AA111",
+  "amount": 50,
+  "currency": "USD",
+  "type": "withdrawal"
+}
+
+###
+
+# ─── Read: Transactions ────────────────────────────────────────────────────────
+
+### 5. List all transactions
+GET {{baseUrl}}/transactions
+
+###
+
+### 6. Filter by account
+GET {{baseUrl}}/transactions?accountId=ACC-AA111
+
+###
+
+### 7. Filter by type
+GET {{baseUrl}}/transactions?type=deposit
+
+###
+
+### 8. Filter by date range
+GET {{baseUrl}}/transactions?from=2026-01-01&to=2026-12-31
+
+###
+
+### 9. Filter combined: account + type
+GET {{baseUrl}}/transactions?accountId=ACC-AA111&type=transfer
+
+###
+
+### 10. Get transaction by ID  (replace <id> with an actual id from response above)
+# GET {{baseUrl}}/transactions/<id>
+
+###
+
+# ─── Read: Accounts ────────────────────────────────────────────────────────────
+
+### 11. Balance for ACC-AA111
+### Expected: { "balances": { "USD": 700, "UAH": 1000 } }
+GET {{baseUrl}}/accounts/ACC-AA111/balance
+
+###
+
+### 12. Balance for ACC-BB222
+### Expected: { "balances": { "USD": 250 } }
+GET {{baseUrl}}/accounts/ACC-BB222/balance
+
+###
+
+### 13. Summary for ACC-AA111
+### Expected: totalDeposits { USD: 1000, UAH: 1000 }, totalWithdrawals { USD: 300 }, count: 4
+GET {{baseUrl}}/accounts/ACC-AA111/summary
+
+###
+
+### 14. Simple interest — 5% annual rate for 30 days on ACC-AA111
+### Expected: interest { USD: 2.88, UAH: 4.11 }
+GET {{baseUrl}}/accounts/ACC-AA111/interest?rate=0.05&days=30
+
+###
+
+# ─── Validation Errors ─────────────────────────────────────────────────────────
+
+### 15. Missing required fields → 400
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{}
+
+###
+
+### 16. Invalid account format → 400
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "toAccount": "bad-format",
+  "amount": 100,
+  "currency": "USD",
+  "type": "deposit"
+}
+
+###
+
+### 17. Invalid currency → 400
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "toAccount": "ACC-AA111",
+  "amount": 100,
+  "currency": "XYZ",
+  "type": "deposit"
+}
+
+###
+
+### 18. Negative amount → 400
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "toAccount": "ACC-AA111",
+  "amount": -50,
+  "currency": "USD",
+  "type": "deposit"
+}
+
+###
+
+### 19. fromAccount on deposit (forbidden) → 400
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "fromAccount": "ACC-AA111",
+  "toAccount": "ACC-BB222",
+  "amount": 100,
+  "currency": "USD",
+  "type": "deposit"
+}
+
+###
+
+### 20. Invalid accountId format on balance route → 400
+GET {{baseUrl}}/accounts/not-an-account/balance
+
+###
+
+### 21. Unknown account → 404
+GET {{baseUrl}}/accounts/ACC-ZZZZZ/balance
+
+###
+
+### 22. Invalid interest params → 400
+GET {{baseUrl}}/accounts/ACC-AA111/interest?rate=0.05abc&days=30
+
+###
+
+### 23. Malformed date filter → 400
+GET {{baseUrl}}/transactions?from=not-a-date
+
+###
