@@ -1,0 +1,22 @@
+{
+  "tickets": [
+    {
+      "customer_email": "valid@example.com",
+      "subject": "Valid Ticket",
+      "description": "This is a valid ticket with all required fields"
+    },
+    {
+      "customer_email": "missing_subject@example.com",
+      "description": "This ticket is missing the subject field"
+    },
+    {
+      "subject": "Missing Email",
+      "description": "This ticket is missing the customer email field"
+    },
+    {
+      "customer_email": "incomplete@example.com",
+      "subject": "Incomplete Data",
+      "description": "Short"
+    }
+  ]
+}

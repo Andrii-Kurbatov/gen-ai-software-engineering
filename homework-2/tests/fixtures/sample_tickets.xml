@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_email>xml1@example.com</customer_email>
+    <subject>Cannot login to account</subject>
+    <description>I forgot my password and cannot sign in to the system</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml2@example.com</customer_email>
+    <subject>Application crashes</subject>
+    <description>Getting a 500 error when I try to use the application</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml3@example.com</customer_email>
+    <subject>Billing issue</subject>
+    <description>I was charged twice for my subscription this month</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml4@example.com</customer_email>
+    <subject>Feature request dark mode</subject>
+    <description>Would be nice to have a dark mode enhancement for the interface</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml5@example.com</customer_email>
+    <subject>Bug report</subject>
+    <description>Steps to reproduce: click button, error appears, dialog should open</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml6@example.com</customer_email>
+    <subject>Account access problem</subject>
+    <description>Cannot login with my credentials</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml7@example.com</customer_email>
+    <subject>Production database down</subject>
+    <description>Our production database is down due to a critical security breach</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml8@example.com</customer_email>
+    <subject>Billing dispute</subject>
+    <description>I need to dispute this charge on my account</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml9@example.com</customer_email>
+    <subject>Add PDF export</subject>
+    <description>Can we add export to PDF functionality for reports</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml10@example.com</customer_email>
+    <subject>System errors appearing</subject>
+    <description>Getting strange errors in the logs and event messages</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml11@example.com</customer_email>
+    <subject>Password reset needed</subject>
+    <description>I forgot my password and need help resetting it</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml12@example.com</customer_email>
+    <subject>Duplicate charge</subject>
+    <description>I was charged multiple times for one transaction</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml13@example.com</customer_email>
+    <subject>UI improvement</subject>
+    <description>The dashboard layout could be improved for better usability</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml14@example.com</customer_email>
+    <subject>Validation bug</subject>
+    <description>Form is accepting invalid email addresses</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml15@example.com</customer_email>
+    <subject>Account locked</subject>
+    <description>My account seems to be locked and I cannot sign in</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml16@example.com</customer_email>
+    <subject>Timeout errors</subject>
+    <description>Connection keeps timing out when uploading files</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml17@example.com</customer_email>
+    <subject>Refund request</subject>
+    <description>Can you process a refund for my last purchase</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml18@example.com</customer_email>
+    <subject>Mobile performance</subject>
+    <description>The app is running slowly on mobile devices</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml19@example.com</customer_email>
+    <subject>Cache bug</subject>
+    <description>Cache is not being cleared properly after updates</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml20@example.com</customer_email>
+    <subject>Authentication error</subject>
+    <description>Getting authentication errors after recent login attempt</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml21@example.com</customer_email>
+    <subject>Server error 503</subject>
+    <description>The service is currently unavailable with 503 service unavailable error</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml22@example.com</customer_email>
+    <subject>Subscription cancel</subject>
+    <description>I need to cancel my subscription immediately</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml23@example.com</customer_email>
+    <subject>Rate limiting</subject>
+    <description>Can we increase the API rate limits for our application</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml24@example.com</customer_email>
+    <subject>Date formatting</subject>
+    <description>Dates are showing in the wrong format in the user interface</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml25@example.com</customer_email>
+    <subject>Session timeout</subject>
+    <description>My session keeps timing out too quickly when inactive</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml26@example.com</customer_email>
+    <subject>Memory leak</subject>
+    <description>Application memory usage keeps growing over time without decreasing</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml27@example.com</customer_email>
+    <subject>Invoice formatting</subject>
+    <description>Invoice template needs adjustment for clarity and readability</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml28@example.com</customer_email>
+    <subject>Search enhancement</subject>
+    <description>Implement advanced search with filters and sorting options</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml29@example.com</customer_email>
+    <subject>Button alignment</subject>
+    <description>Some buttons are misaligned on mobile view causing usability issues</description>
+  </ticket>
+  <ticket>
+    <customer_email>xml30@example.com</customer_email>
+    <subject>MFA setup issue</subject>
+    <description>Cannot enable two-factor authentication on my account</description>
+  </ticket>
+</tickets>

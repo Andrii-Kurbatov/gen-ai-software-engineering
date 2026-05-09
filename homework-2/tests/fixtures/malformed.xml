@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_email>test1@example.com</customer_email>
+    <subject>Test Ticket</subject>
+    <description>This description is missing closing tag
+  </ticket>
+  <ticket>
+    <customer_email>test2@example.com
+    <subject>Another Ticket</subject>
+    <description>This ticket has unclosed email tag</description>
+  </ticket>
+</tickets>

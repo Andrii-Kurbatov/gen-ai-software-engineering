@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(curl -s -X POST http://localhost:3000/tickets/import -F file=@/tmp/test_tickets.csv)",
+      "Bash(curl -s -X POST http://localhost:3000/tickets/import -F file=@/tmp/test_tickets.xml)",
+      "Bash(npm test *)",
+      "Bash(curl -s \"http://localhost:3000/tickets?status=new&category=account_access\")",
+      "Bash(npx tsc *)",
+      "Bash(npx jest *)"
+    ]
+  }
+}

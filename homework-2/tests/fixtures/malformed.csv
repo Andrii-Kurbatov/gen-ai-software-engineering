@@ -1,0 +1,6 @@
+customer_email,subject,description
+"unclosed quote,test@example.com,Some description here
+test2@example.com,Subject,Missing description
+test3@example.com,"Field with, comma","Description with ""escaped"" quotes
+missing@example.com,Subject Only
+incomplete,Data,Too
