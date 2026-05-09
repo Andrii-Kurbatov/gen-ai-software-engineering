@@ -1,0 +1,15 @@
+{
+  "name": "banking-transactions-api",
+  "version": "1.0.0",
+  "description": "Banking Transactions REST API — HW1",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "currency-codes": "^2.2.0",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "uuid": "^11.1.1"
+  }
+}
