@@ -1,5 +1,9 @@
 # Support Ticket System
 
+> **Student Name**: Andrii Kurbatov
+> **Date Submitted**: 2026-05-14
+> **AI Tools Used**: Claude Code, Codex
+
 A Node.js/Express REST API for managing customer support tickets with automatic categorization and multi-format bulk import capabilities.
 
 ## Architecture
