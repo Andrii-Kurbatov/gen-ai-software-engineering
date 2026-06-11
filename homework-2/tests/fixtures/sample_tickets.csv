@@ -1,0 +1,51 @@
+customer_email,subject,description,category,priority
+user1@example.com,Cannot login to account,I forgot my password and cannot sign in to the system,account_access,high
+user2@example.com,Application keeps crashing,Getting a 500 error when I try to use the app,technical_issue,urgent
+user3@example.com,Invoice payment issue,I was charged twice for my subscription and need a refund,billing_question,high
+user4@example.com,Request dark mode feature,Would be nice to have a dark mode enhancement for the UI,feature_request,low
+user5@example.com,Bug report with reproduction steps,Steps to reproduce: 1. Click button. Expected behavior: dialog opens,bug_report,medium
+user6@example.com,Account access problem,I cannot login with my credentials,account_access,medium
+user7@example.com,Critical production issue,Our production database is down due to a security breach,technical_issue,urgent
+user8@example.com,Billing dispute,I need to dispute this charge on my account,billing_question,medium
+user9@example.com,Add new feature,Can we add export to PDF functionality,feature_request,low
+user10@example.com,System error,Getting strange errors in the logs,technical_issue,medium
+user11@example.com,Password reset needed,I forgot my password and need help resetting it,account_access,medium
+user12@example.com,Duplicate charge,I was charged multiple times for one transaction,billing_question,high
+user13@example.com,UI improvement suggestion,The dashboard layout could be improved for better usability,feature_request,low
+user14@example.com,Data validation bug,Form is accepting invalid email addresses,bug_report,high
+user15@example.com,Login blocked,My account seems to be locked and I cannot sign in,account_access,high
+user16@example.com,Network timeout,Connection keeps timing out when uploading files,technical_issue,medium
+user17@example.com,Refund request,Can you process a refund for my last purchase,billing_question,medium
+user18@example.com,Performance enhancement,The app is running slowly on mobile devices,feature_request,medium
+user19@example.com,Cache bug,Cache is not being cleared properly after updates,bug_report,medium
+user20@example.com,Authentication error,Getting authentication errors after recent login attempt,account_access,high
+user21@example.com,Server error 503,The service is currently unavailable with 503 error,technical_issue,urgent
+user22@example.com,Subscription cancellation,I need to cancel my subscription immediately,billing_question,high
+user23@example.com,API rate limiting,Can we increase the API rate limits for our application,feature_request,medium
+user24@example.com,Date formatting issue,Dates are showing in the wrong format in the UI,bug_report,low
+user25@example.com,Session timeout,My session keeps timing out too quickly,account_access,medium
+user26@example.com,Memory leak,Application memory usage keeps growing over time,technical_issue,urgent
+user27@example.com,Invoice formatting,Invoice template needs adjustment for clarity,billing_question,low
+user28@example.com,Search functionality,Implement advanced search with filters,feature_request,medium
+user29@example.com,Button alignment bug,Some buttons are misaligned on mobile view,bug_report,low
+user30@example.com,MFA setup issue,Cannot enable two-factor authentication on account,account_access,high
+user31@example.com,Database connection error,Cannot connect to database after maintenance,technical_issue,urgent
+user32@example.com,Tax calculation,Tax is being calculated incorrectly on invoices,billing_question,high
+user33@example.com,Mobile app feature,Add offline mode to the mobile application,feature_request,medium
+user34@example.com,Notification bug,Push notifications are not being delivered correctly,bug_report,medium
+user35@example.com,Account recovery,Need to recover access to my account,account_access,urgent
+user36@example.com,API documentation,API documentation is outdated and unclear,technical_issue,low
+user37@example.com,Payment gateway,Payment processing is failing intermittently,billing_question,urgent
+user38@example.com,Batch processing,Can we add batch processing capability,feature_request,low
+user39@example.com,Export functionality,CSV export is producing corrupted files,bug_report,high
+user40@example.com,Login page slowness,Login page takes too long to load,account_access,medium
+user41@example.com,SSL certificate issue,SSL certificate validation is failing,technical_issue,urgent
+user42@example.com,Discount code issue,Discount code is not applying to orders,billing_question,high
+user43@example.com,Admin dashboard,Create comprehensive admin dashboard,feature_request,medium
+user44@example.com,Form submission,Form is not submitting when required fields are filled,bug_report,high
+user45@example.com,Account locked,Account has been locked due to multiple failed login attempts,account_access,high
+user46@example.com,Service degradation,System is experiencing performance degradation,technical_issue,urgent
+user47@example.com,Refund processing,Refund was initiated but money not received,billing_question,high
+user48@example.com,Accessibility improvements,Add better accessibility features for disabled users,feature_request,medium
+user49@example.com,Redirect loop,User is stuck in a redirect loop on login,bug_report,urgent
+user50@example.com,Account merge,Need to merge two accounts into one,account_access,medium

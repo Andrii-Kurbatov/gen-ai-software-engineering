@@ -1,0 +1,102 @@
+[
+  {
+    "customer_email": "alice@example.com",
+    "subject": "Cannot login to my account",
+    "description": "I forgot my password and cannot sign in to the system anymore"
+  },
+  {
+    "customer_email": "bob@example.com",
+    "subject": "Application crashes on startup",
+    "description": "Getting a 500 error when I try to use the app for the first time"
+  },
+  {
+    "customer_email": "charlie@example.com",
+    "subject": "Incorrect billing amount",
+    "description": "I was charged twice for my subscription this month and need a refund"
+  },
+  {
+    "customer_email": "diana@example.com",
+    "subject": "Feature request dark mode",
+    "description": "Would be nice to have a dark mode enhancement for the user interface"
+  },
+  {
+    "customer_email": "evan@example.com",
+    "subject": "Bug report with steps to reproduce",
+    "description": "Steps to reproduce: 1. Click the button. Expected behavior: dialog opens. Actual behavior: crash"
+  },
+  {
+    "customer_email": "fiona@example.com",
+    "subject": "Account access denied",
+    "description": "Cannot login with my credentials despite correct password entry"
+  },
+  {
+    "customer_email": "george@example.com",
+    "subject": "Critical production database down",
+    "description": "Our production database is down due to a critical security breach in the system"
+  },
+  {
+    "customer_email": "hannah@example.com",
+    "subject": "Billing dispute needed",
+    "description": "I need to dispute this charge on my account immediately"
+  },
+  {
+    "customer_email": "ivan@example.com",
+    "subject": "Add PDF export feature",
+    "description": "Can we add export to PDF functionality for reports and documents"
+  },
+  {
+    "customer_email": "julia@example.com",
+    "subject": "Strange system errors appearing",
+    "description": "Getting strange errors in the logs and error messages not clearing"
+  },
+  {
+    "customer_email": "kevin@example.com",
+    "subject": "Password reset required",
+    "description": "I forgot my password and need help resetting it to access my account"
+  },
+  {
+    "customer_email": "laura@example.com",
+    "subject": "Duplicate charge on account",
+    "description": "I was charged multiple times for one transaction on my credit card"
+  },
+  {
+    "customer_email": "michael@example.com",
+    "subject": "UI improvement suggestion",
+    "description": "The dashboard layout could be improved for better usability and accessibility"
+  },
+  {
+    "customer_email": "natalie@example.com",
+    "subject": "Data validation issue",
+    "description": "Form is accepting invalid email addresses in the validation field"
+  },
+  {
+    "customer_email": "oliver@example.com",
+    "subject": "Account locked issue",
+    "description": "My account seems to be locked and I cannot sign in to access the service"
+  },
+  {
+    "customer_email": "patricia@example.com",
+    "subject": "Connection timeout errors",
+    "description": "Connection keeps timing out when uploading files to the server"
+  },
+  {
+    "customer_email": "quinn@example.com",
+    "subject": "Refund request needed",
+    "description": "Can you process a refund for my last purchase as soon as possible"
+  },
+  {
+    "customer_email": "robert@example.com",
+    "subject": "Mobile performance issue",
+    "description": "The app is running slowly on mobile devices compared to desktop"
+  },
+  {
+    "customer_email": "sarah@example.com",
+    "subject": "Cache clearing bug",
+    "description": "Cache is not being cleared properly after updates to the system"
+  },
+  {
+    "customer_email": "thomas@example.com",
+    "subject": "Authentication failure error",
+    "description": "Getting authentication errors after recent login attempt to the account"
+  }
+]

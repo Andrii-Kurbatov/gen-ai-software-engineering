@@ -1,0 +1,9 @@
+customer_email,subject,description,priority
+valid@example.com,Valid Subject,This is a valid description with sufficient content,high
+invalid-email,Invalid Email,This description is too short,medium
+another_valid@example.com,Another Valid Subject,This is another valid description with more than ten characters,low
+missing@example.com,,This description is present but subject is missing,high
+notanemail,Bad Email Format,This is a valid length description with lots of content,medium
+good_one@example.com,Working Subject,This description has enough characters to be valid and acceptable,urgent
+tooshort@example.com,Bad,Short desc,high
+final_valid@example.com,Final Valid Ticket,This is the final ticket with all required fields filled properly,low
