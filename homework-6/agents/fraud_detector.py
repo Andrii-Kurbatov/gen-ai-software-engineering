@@ -1,5 +1,5 @@
 """Fraud Detector — Agent 2 of the pipeline.
-meow
+
 Computes an additive risk score (0–100) for validated transactions
 based on amount, timing, geography, and channel signals.
 """
