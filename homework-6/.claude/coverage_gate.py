@@ -10,7 +10,7 @@ import os
 import subprocess
 import sys
 
-THRESHOLD = "100"  # change to "100" temporarily to force a block for screenshots
+THRESHOLD = "80"
 
 
 def block(reason: str) -> None:
