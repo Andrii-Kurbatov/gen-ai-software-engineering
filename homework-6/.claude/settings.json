@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,sys,subprocess; d=json.load(sys.stdin); cmd=d.get('tool_input',{}).get('command',''); ok=('git push' not in cmd) or subprocess.run(['pytest','--cov=agents','--cov=integrator','--cov=pipeline_mcp','--cov-fail-under=100','-q'],cwd='.').returncode==0; ok or print(json.dumps({'hookSpecificOutput':{'hookEventName':'PreToolUse','permissionDecision':'deny','permissionDecisionReason':'Coverage gate failed: pytest coverage < 80%. Push blocked.'}}))\""
+          }
+        ]
+      }
+    ]
+  }
+}
