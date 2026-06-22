@@ -18,6 +18,15 @@ SUMMARY_FILE = RESULTS_DIR / "pipeline_summary.json"
 _processed: list[dict] = []
 
 
+def reset() -> None:
+    """Clear accumulated state so each pipeline run starts from zero.
+
+    Without this, calling run_pipeline() twice in one process would double-count
+    transactions in pipeline_summary.json.
+    """
+    _processed.clear()
+
+
 def _log_line(txn_id: str, status: str, risk: str) -> None:
     line = (
         f"[{now_iso()}] [reporter] {txn_id} — "

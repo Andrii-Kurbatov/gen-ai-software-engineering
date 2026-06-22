@@ -8,10 +8,10 @@ in the PR description (the rubric checks both the folder and the PR).
 
 | ✅ | File | Capture WHEN | How |
 |----|------|--------------|-----|
-| [ ] | `spec-produced.png` *(PR-desc extra)* | running **`/write-spec`** (Agent 1) | the command generating `specification.md` |
-| [ ] | `mcp-interaction.png` *(half 1: context7)* | during **`/generate-pipeline`** (Agent 2) | the **context7** query result while looking up `decimal` / FastMCP — ⚠️ ephemeral, grab it live |
-| [ ] | `test-coverage.png` | after **`/write-tests`** (Agent 3) | `pytest` output showing coverage ≥ 90% |
-| [ ] | `hook-trigger.png` | after tests exist | **force a fail** (e.g. set `--cov-fail-under=100`), attempt `git push`, capture the block, then restore |
+| [x] | `spec-produced.png` *(PR-desc extra)* | running **`/write-spec`** (Agent 1) | the command generating `specification.md` |
+| [x] | `mcp-interaction.png` *(half 1: context7)* | during **`/generate-pipeline`** (Agent 2) | the **context7** query result while looking up `decimal` / FastMCP — ⚠️ ephemeral, grab it live |
+| [x] | `test-coverage.png` | after **`/write-tests`** (Agent 3) | `pytest` output showing coverage ≥ 90% |
+| [x] | `hook-trigger.png` | after tests exist | **force a fail** (e.g. set `--cov-fail-under=100`), attempt `git push`, capture the block, then restore |
 | [ ] | `pipeline-run.png` | demo | full `python integrator.py` terminal output |
 | [ ] | `skill-run-pipeline.png` | demo | **`/run-pipeline`** executing |
 | [ ] | `mcp-interaction.png` *(half 2: custom tool)* | **after** the pipeline run | call `get_transaction_status` / `list_pipeline_results` via the MCP server |

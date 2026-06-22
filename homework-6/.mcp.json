@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pipeline-status": {
+      "command": ".venv/bin/python",
+      "args": ["pipeline_mcp/server.py"]
+    }
+  }
+}

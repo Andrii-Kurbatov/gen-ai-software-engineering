@@ -52,6 +52,13 @@ class TestFullPipeline:
         totals = integrator_module.run_pipeline(str(SAMPLE_TRANSACTIONS))
         assert isinstance(totals, dict)
 
+    def test_repeated_runs_do_not_accumulate(self, pipeline_env):
+        # Running the pipeline twice in one process must not double-count.
+        integrator_module.run_pipeline(str(SAMPLE_TRANSACTIONS))
+        integrator_module.run_pipeline(str(SAMPLE_TRANSACTIONS))
+        summary = json.loads((pipeline_env / "pipeline_summary.json").read_text())
+        assert summary["total_transactions"] == 8
+
     def test_produces_eight_result_files(self, pipeline_env):
         integrator_module.run_pipeline(str(SAMPLE_TRANSACTIONS))
         result_files = sorted(pipeline_env.glob("TXN*.json"))
