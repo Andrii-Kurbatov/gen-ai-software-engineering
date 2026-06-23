@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PAT}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/akurbatov/Documents/Courses/gen-ai-software-engineering"
+      ]
+    },
+    "atlassian": {
+      "type": "sse",
+      "url": "https://mcp.atlassian.com/v1/sse"
+    },
+    "lorem-ipsum": {
+      "command": "homework-5/custom-mcp-server/.venv/bin/python",
+      "args": [
+        "homework-5/custom-mcp-server/server.py"
+      ]
+    }
+  }
+}
