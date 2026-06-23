@@ -1,6 +1,6 @@
 # Homework 4 — 4-Agent Bug-Fixing Pipeline
 
-**Author / Student:** Andrii Kurbatov (andrii.kurbatov@techmagic.co)
+**Author / Student:** Andrii Kurbatov
 **Course:** GenAI and Agentic AI for Software Engineering
 
 A single-command, multi-agent pipeline that researches, verifies, fixes, security-reviews, and
