@@ -1,6 +1,6 @@
 # Homework 3 — Specification-Driven Design
 
-**Created by Andrii Kurbatov** (andrii.kurbatov@techmagic.co)
+**Created by Andrii Kurbatov** (andrii.kurbatov.w@gmail.com)
 
 ## Student & task summary
 
