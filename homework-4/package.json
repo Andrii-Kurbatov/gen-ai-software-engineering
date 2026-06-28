@@ -1,0 +1,28 @@
+{
+  "name": "expense-tracker-api",
+  "version": "1.0.0",
+  "description": "Expense Tracker REST API — sample app for the HW4 4-agent pipeline",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "pipeline": "bash run-pipeline.sh"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

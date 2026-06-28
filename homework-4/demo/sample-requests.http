@@ -1,0 +1,45 @@
+### Expense Tracker API — sample requests
+### Base URL
+@base = http://localhost:3000
+
+### Health check
+GET {{base}}/health
+
+### Create an expense
+POST {{base}}/expenses
+Content-Type: application/json
+
+{ "description": "Coffee", "amount": 4.5, "category": "food" }
+
+### Create another expense
+POST {{base}}/expenses
+Content-Type: application/json
+
+{ "description": "Monitor", "amount": 100, "category": "office" }
+
+### List all expenses
+GET {{base}}/expenses
+
+### Filter by category
+GET {{base}}/expenses?category=food
+
+### Filter by max amount
+### BUG-001: before the fix, string/number coercion makes this return wrong results.
+GET {{base}}/expenses?maxAmount=9
+
+### Get expense by id (replace the id)
+GET {{base}}/expenses/REPLACE_WITH_ID
+
+### Get a non-existent expense
+### BUG-002: before the fix, this returns 200 + empty body instead of 404.
+GET {{base}}/expenses/does-not-exist
+
+### Summary (total + per-category)
+GET {{base}}/summary
+
+### Filter endpoint
+### SEC-001: before the fix, `expr` is passed to eval() — code injection / RCE.
+### Benign example:
+GET {{base}}/expenses/filter?expr=e.amount > 10
+### Malicious example (DO NOT run against a real process — demonstrates the vuln):
+# GET {{base}}/expenses/filter?expr=process.exit(1)
