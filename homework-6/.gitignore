@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.coverage
+.pytest_cache/
+.venv/
+shared/input/*
+shared/processing/*
+shared/output/*
+shared/results/*
+!shared/**/.gitkeep
